@@ -1,0 +1,56 @@
+<!--
+  Generated template for the LiteracyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Financial Literacy</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="content">
+  <ion-card>
+    <ion-card-content>
+      <img src="assets/imgs/financial-literacy.jpg" alt=""/>
+    </ion-card-content>
+  </ion-card>
+  <p class="text-right">
+     The possession of knowledge and understanding of financial matters. It often entails the knowledge of properly making decisions
+    pertaining to certain personal finance areas like real estate, insurance, investing, saving (especially for college), tax
+    planning and retirement.
+  </p>
+  <p class="text-white">It also involves intimate knowledge of financial concepts like compound interest , financial planning,
+    the mechanics of a credit card, advantageous savings methods, consumer rights, time value of money, etc.
+  </p>
+  <ion-card>
+    <ion-card-header class="social">
+      <ion-row>
+        <ion-col col-md-4>
+          <button ion-button ion-icon clear small (click)="shows();">
+            <ion-icon name="text"></ion-icon>
+            <div>12 Comments</div>
+          </button>
+        </ion-col>
+        <ion-col col-md-4>
+          <button ion-button ion-icon clear small (click)="like()">
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>19 {{state}}</div>
+          </button>
+        </ion-col>
+        <ion-col col-md-4>
+          <button ion-button ion-icon clear small>
+            <ion-icon name="share"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+      <p>
+        {{commented}}
+      </p>
+    </ion-card-header>
+  </ion-card>
+  
+</ion-content>

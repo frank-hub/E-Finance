@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Main</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="main-page">
+  <ion-item>
+    <img src="assets/imgs/FIM.jpg" alt=""/>
+  </ion-item>
+<ion-list class="main-list">
+  <ion-item button (click)="literacy()">
+    <ion-icon name="book" item-start></ion-icon>
+     What is financial literacy
+  </ion-item>
+  <ion-item button (click)="needs()">
+    <ion-icon ios="ios-funnel" md="md-funnel" item-start></ion-icon>
+     Distinguish between needs and wants
+  </ion-item>
+  <ion-item button (click)="hierachy()">
+    <ion-icon name="stats" item-start></ion-icon>
+     Maslow's hierachy of needs
+  </ion-item>
+  <ion-item>
+    <ion-icon ios="ios-ionic" md="md-ionic" item-start></ion-icon>
+     Typical employee life cycle
+  </ion-item>
+  <ion-item>
+    <ion-icon ios="ios-bookmarks" md="md-bookmarks" item-start></ion-icon>
+    Balancing needs and wants
+  </ion-item>
+  <ion-item button (click)="literacy()">
+    <ion-icon ios="ios-briefcase" md="md-briefcase" item-start></ion-icon>
+    How to allocate your money
+  </ion-item>
+  <ion-item button (click)="finance()">
+    <ion-icon ios="ios-briefcase" md="md-briefcase" item-start></ion-icon>
+    Read More</ion-item>
+</ion-list>
+</ion-content>
