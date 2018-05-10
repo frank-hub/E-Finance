@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams ,AlertController ,ToastController } from 'ionic-angular';
-
-/**
- * Generated class for the NeedAndWantsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {SocialSharing} from '@ionic-native/social-sharing'
 
 @IonicPage()
 @Component({
@@ -15,7 +9,7 @@ import { IonicPage, NavController, NavParams ,AlertController ,ToastController }
 })
 export class NeedAndWantsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtl : ToastController , public needComment : AlertController) {
+  constructor(public navCtrl: NavController, public socialSharing: SocialSharing ,public navParams: NavParams, public toastCtl : ToastController , public needComment : AlertController) {
   }
 
   ionViewDidLoad() {
@@ -68,5 +62,13 @@ export class NeedAndWantsPage {
     ]
   });
   prompty.present();
+   }
+   share(){
+     this.socialSharing.share("message")
+     .then(()=>{
+
+     }).catch(()=>{
+
+     });
    }
 }

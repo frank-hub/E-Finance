@@ -23,8 +23,18 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas eveniet
             </ion-icon>
           </button>
         </ion-col>
-        <ion-col col-md-4></ion-col>
-        <ion-col col-md-4></ion-col>
+        <ion-col col-md-4>
+          <button ion-button ion-icon clear small>
+            <ion-icon name="thumbs-up">
+              <div>2</div>
+            </ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-md-4>
+          <button ion-button ion-icon clear small (click)="share()">
+            <ion-icon name="share"></ion-icon>
+          </button>
+        </ion-col>
       </ion-row>
     </ion-card-header>
   </ion-card>

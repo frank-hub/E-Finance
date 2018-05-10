@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SplashPage } from '../pages/splash/splash';
 import {SocialSharing} from '@ionic-native/social-sharing'
+import {SQLite } from '@ionic-native/sqlite'
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {SocialSharing} from '@ionic-native/social-sharing'
   providers: [
     StatusBar,
     SocialSharing,
+    SQLite,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams ,AlertController, ToastController} from 'ionic-angular';
-
+import { SocialSharing } from "@ionic-native/social-sharing";
 /**
  * Generated class for the LiteracyPage page.
  *
@@ -15,7 +15,7 @@ import { IonicPage, NavController, NavParams ,AlertController, ToastController} 
 })
 export class LiteracyPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams , public comment : AlertController , public toastCtl : ToastController) {
+  constructor(public navCtrl: NavController,public socialSharing: SocialSharing ,public navParams: NavParams , public comment : AlertController , public toastCtl : ToastController) {
   }
 
   ionViewDidLoad() {
@@ -74,4 +74,32 @@ like = () => {
   }
 }
 
+share(){
+this.socialSharing.share("message")
+.then(()=>{
+
+}).catch(()=>{
+
+});
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
