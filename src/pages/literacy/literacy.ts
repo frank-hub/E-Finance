@@ -73,9 +73,9 @@ like = () => {
     this.state = "Unlike";
   }
 }
-
+message = "hello";
 share(){
-this.socialSharing.share("message")
+this.socialSharing.share(this.message)
 .then(()=>{
 
 }).catch(()=>{

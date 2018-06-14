@@ -11,26 +11,26 @@
 <ion-content padding class="main-page">
   <ion-card>
     <img src="assets/imgs/hierachy.jpg"/>
-    <ion-card-content>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas eveniet vitae totam! Ad quas ratione quis facere! Provident aliquid modi alias facilis explicabo id distinctio dolor impedit magnam necessitatibus.
+    <ion-card-content style="color: #080808">
+       Maslow (1943, 1954) stated that people are motivated to achieve certain needs and that some needs take precedence over others.
+      Our most basic need is for physical survival, and this will be the first thing that motivates our behavior. Once that level
+      is fulfilled the next level up is what motivates us, and so on.
     </ion-card-content>
-    <ion-card-header>
+    <ion-card-header class="social">
       <ion-row>
-        <ion-col col-md-4>
-          <button ion-button ion-icon clear small>
-            <ion-icon name="text">
-              <div>2 Comments</div>
-            </ion-icon>
+        <ion-col>
+          <button ion-button ion-icon clear small (click)="comment()">
+            <ion-icon name="text"> </ion-icon>
+            <div> 2 Comments</div>
           </button>
         </ion-col>
-        <ion-col col-md-4>
+        <ion-col>
           <button ion-button ion-icon clear small>
-            <ion-icon name="thumbs-up">
-              <div>2</div>
-            </ion-icon>
+            <ion-icon name="thumbs-up"> </ion-icon>
+            <div> 2</div>
           </button>
         </ion-col>
-        <ion-col col-md-4>
+        <ion-col>
           <button ion-button ion-icon clear small (click)="share()">
             <ion-icon name="share"></ion-icon>
           </button>
